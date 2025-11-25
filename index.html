@@ -56,14 +56,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://emoji-amber.vercel.app/">
+    <link rel="canonical" href="https://emoji-amber.netlify.app/">
 
     <!-- Social Preview -->
     <meta property="og:title" content="Emoji Shape Generator — Custom Mixed Emojis">
     <meta property="og:description" content="Generate special emoji + shapes combos like 🐦‍⃢⃢😔, 🗽⃢⃢🗿, 👽⃜ instantly.">
-    <meta property="og:url" content="https://emoji-amber.vercel.app/">
+    <meta property="og:url" content="https://emoji-amber.netlify.app/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/preview.png">
+    <meta property="og:image" content="/public/icons/icon-512.png">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -71,7 +71,7 @@
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "Emoji Shape Generator",
-      "url": "https://emoji-amber.vercel.app/",
+      "url": "https://emoji-amber.netlify.app/",
       "description": "Generate unique emoji + shape combos like 🐦‍⃢⃢😔, 🗽⃢⃢🗿, 👽⃜ with one-click copy.",
       "applicationCategory": "Utility",
       "operatingSystem": "All"
@@ -79,11 +79,11 @@
     </script>
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/public/style.css">
 
     <!-- PWA / Manifest -->
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/icons/icon-192.png">
+    <link rel="manifest" href="/public/manifest.json">
+    <link rel="icon" href="/public/icons/icon-192.png">
     <meta name="theme-color" content="#000000">
 </head>
 <body>
@@ -170,12 +170,12 @@
     </div>
 
     <!-- Script -->
-    <script src="script.js"></script>
+    <script src="/public/script.js"></script>
 
     <!-- Register Service Worker -->
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('/public/sw.js')
           .then(() => console.log('Service Worker registered successfully'))
           .catch(err => console.error('Service Worker registration failed', err));
       }
